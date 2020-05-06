@@ -13,7 +13,6 @@ require_once($root_path."php/clsDB.php");
 require_once($root_path."php/clsNumber.php");
 require_once($root_path."settings.php");
 $db = new clsDB($db_info['database'], $db_info['username'], $db_info['password']);
-$settings = clsSettings::loadSettings($db);
 
 IncludeFolder($root_path."models/");
 IncludeFolder($root_path."modules/");
