@@ -1,8 +1,44 @@
 <html>
     <head>
-        <title>smart display</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>raspberry display</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href="css/weather.css" rel="stylesheet" type="text/css">
+        <link href="css/units.css" rel="stylesheet" type="text/css">
+        <script lang="javascript" src="js/jquery-1.12.1.min.js"></script>
+        <script lang="javascript" src="js/main.js"></script>
     </head>
     <body>
-        <header>null</header>
+        <section id="landing">
+            <header>
+                <h1></h1>
+                <h2 var="current_time"></h2>
+                <h3 var="current_date"></h3>
+            </header>
+            <div id="live_weather" weather="" icon="">
+                <div class="temp" var="temp" unit="fahrenheit"></div>
+                <div class="temp" var="feels_like" unit="fahrenheit"></div>
+                <div class="humidity" var="humidity" unit="percent"></div>
+            </div>    
+            <footer>
+                <div><img id="hub_qr_code" class="qr link" src="http://10.0.0.108/api/info/icon/url.png" /></div>
+            </footer>
+        </section>
+        <section id="rooms" style="display: none;">
+        </section>
+        <section id="servers" style="display: none;">
+        </section>
+        <section id="recipes" style="display: none;">
+            <header>
+                <h1></h1>
+                <h2 var="recipe_timer"></h2>
+                <h3 var="recipe_name"></h3>
+            </header>
+        </section>
     </body>
 </html>

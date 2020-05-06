@@ -1,0 +1,12 @@
+.percent::after,
+[unit="percent"]::after{
+	content: '%';
+}
+.fahrenheit::after,
+[unit="fahrenheit"]::after{
+	content: '°F';
+}
+.celsius::after,
+[unit="celsius"]::after{
+    content: '°C';
+}

@@ -1,0 +1,83 @@
+html, body {
+    margin: 0em;
+    padding: 0em;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(http://10.0.0.108/images/hero3.jpg);
+}
+header {
+    position: fixed;
+    bottom: 5vh;
+    left: 5vh;
+    font-size: 2em;
+    color: aliceblue;
+    text-shadow: black 0.1em 0.1em;
+    height: 15vh;
+    width: 90vw;
+}
+header h1,
+header h2,
+header h3 {
+    padding: 0em;
+    margin: 0.1em;
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+}
+header h1 {
+    width: 15vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-image: url(../img/null\ icon.png);
+    top: 0em;
+    left: 0em;
+    bottom: 0em;
+}
+
+header h2 {
+    font-size: 1.5em;
+    left: 15vh;
+    top:0em;
+}
+
+header h3 {
+    font-size: 0.75em;
+    left: 15vh;
+    bottom:1em;
+}
+
+footer {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+}
+footer img.qr {
+    max-width: 20vh;
+    max-height: 20vh;
+}
+
+header h2[time="4:20am"],
+header h2[time="4:20pm"],
+header h3[date="4/20"]{
+    color: rgb(153, 255, 0);
+}
+header h2[time="4:20am"]::after,
+header h2[time="4:20pm"]::after,
+header h3[date="4/20"]::after{
+    content: icon;
+    height: 1em;
+    width: 1em;
+    display: inline-block;
+    background-position: center center;
+}
+header h2[time="4:20am"]::after{
+    background-image: url(../img/hemp.png);
+}
+header h2[time="4:20pm"]::after,
+header h3[date="4/20"]::after{
+    background-image: url(../img/weed.png);
+}
