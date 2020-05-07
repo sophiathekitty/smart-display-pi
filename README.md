@@ -4,3 +4,5 @@ i'm building a smart display for the ecosystem of raspberry pi and other local w
 this project has the new mvc project organization. maybe someday i'll make it back into classes... but now it's just a bunch of functions.
 
 i'm putting all the functions that directly talk to the database in models... and then anything that does stuff with that or links together a bunch of models i'm putting under modules. i have a function for outputting json under views. i have a fancy file under includes that will include all the files under modeles, models, and views. i then have an api folder where i'm putting in all the api files that actually use the modules, models, and views to do api stuff. and then i also have a helpers folder where i'm putting things i want to call with crontab.
+
+the main benefit this has over the kittymvc stuff is that kittymvc doesn't nicely output json. maybe i'll actually build kittymvc around this current setup and make a kittymvc repo. but only if i can figure out a better solution to have the models be a meaningful data structure that loads and saves data from the database. so i can get lenting in vs code or something.
