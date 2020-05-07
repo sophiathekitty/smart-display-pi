@@ -15,15 +15,35 @@ var stndrdth = ["st","nd","rd","th","th","th","th","th","th","th","th","th","th"
 8 8888     `88. 8 888888888888 .8'       `8. `88888. 8 888888888P'           8 8888      
 */
 $(document).ready(function(){
-    PullWeather();
-    window.weatherTimer = setInterval(PullWeather,36000);
+    LoadSettings();
     DisplayTime();
     window.timeTimer = setInterval(DisplayTime,1000);
 });
+function min_to_millisecond(min){
+    return min * 60 * 1000;
+}
+
+function LoadSettings(){
+    $.get("/api/settings").done(function(settings){
+        console.log(settings);
+        window.settings = settings;
+        PullWeather();
+        LoadPhoto();
+        window.settingsTimer = setTimeout(PullSettings,window.settings.local_refresh);    
+    });
+}
+function PullSettings(){
+    clearTimeout(window.settingsTimer);
+    window.settingsTimer = setTimeout(PullSettings,window.settings.local_refresh);    
+    $.get("/api/settings").done(function(settings){
+        console.log(settings);
+        window.settings = settings;
+    });
+}
 
 function DisplayTime(){
     var date = new Date(Date.now());
-    console.log(date);
+    //console.log(date);
     var hours = date.getHours();
     var am = "am";
     if(hours == 12)
@@ -41,7 +61,7 @@ function DisplayTime(){
         mins = "0" + mins
     }
     var time = hours + ":" + mins + am;
-    console.log(time);
+    //console.log(time);
     $("header [var=current_time]").html(time);
     $("header [var=current_time]").attr("time",time);
     $("header [var=current_date]").html(day_of_week[date.getDay()] + ", " + months[date.getMonth()] + " " + date.getDate() + stndrdth[date.getDate()-1] + ", " + date.getFullYear());
@@ -49,6 +69,9 @@ function DisplayTime(){
 }
 
 function PullWeather(){
+    if(window.weatherTimer)
+        clearTimeout(window.weatherTimer);
+    window.weatherTimer = setTimeout(PullWeather,min_to_millisecond(window.settings.weather_refresh));
     $.get(weather_url).done(function(weather){
         console.log(weather);
 
