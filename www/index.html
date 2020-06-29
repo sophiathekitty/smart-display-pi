@@ -24,10 +24,39 @@
             </header>
             <div id="live_weather" weather="" icon="">
                 <div class="temp" var="temp" unit="fahrenheit"></div>
-                <div class="temp" var="feels_like" unit="fahrenheit"></div>
-                <div class="humidity" var="humidity" unit="percent"></div>
-            </div>    
-            <footer>
+                <div class="temp extra" var="feels_like" unit="fahrenheit"></div>
+                <div class="humidity extra" var="humidity" unit="percent"></div>
+                <div class="wind extra" var="wind_speed" unit="MetersPerSeconds"></div>
+                <!--<div class="description" var="weather_description"></div>-->
+                <div class="temp_chart simple">
+                    <div class="time_bar"></div>
+                    <div class="hour" hour="00"></div>
+                    <div class="hour" hour="01"></div>
+                    <div class="hour" hour="02"></div>
+                    <div class="hour" hour="03"></div>
+                    <div class="hour" hour="04"></div>
+                    <div class="hour" hour="05"></div>
+                    <div class="hour" hour="06"></div>
+                    <div class="hour" hour="07"></div>
+                    <div class="hour" hour="08"></div>
+                    <div class="hour" hour="09"></div>
+                    <div class="hour" hour="10"></div>
+                    <div class="hour" hour="11"></div>
+                    <div class="hour" hour="12"></div>
+                    <div class="hour" hour="13"></div>
+                    <div class="hour" hour="14"></div>
+                    <div class="hour" hour="15"></div>
+                    <div class="hour" hour="16"></div>
+                    <div class="hour" hour="17"></div>
+                    <div class="hour" hour="18"></div>
+                    <div class="hour" hour="19"></div>
+                    <div class="hour" hour="20"></div>
+                    <div class="hour" hour="21"></div>
+                    <div class="hour" hour="22"></div>
+                    <div class="hour" hour="23"></div>
+                </div>        
+            </div>
+                <footer>
                 <div><img id="hub_qr_code" class="qr link" src="http://10.0.0.108/api/info/icon/url.png" /></div>
             </footer>
         </section>
@@ -39,10 +68,11 @@
             </header>
             <div id="live_weather" weather="" icon="">
                 <div class="temp" var="temp" unit="fahrenheit"></div>
-                <div class="temp" var="feels_like" unit="fahrenheit"></div>
-                <div class="humidity" var="humidity" unit="percent"></div>
+                <div class="temp extra" var="feels_like" unit="fahrenheit"></div>
+                <div class="humidity extra" var="humidity" unit="percent"></div>
+                <div class="wind extra" var="wind_speed" unit="MetersPerSeconds"></div>
             </div>
-        </section>
+            </section>
         <section id="rooms" style="display: none;">
         </section>
         <section id="servers" style="display: none;">

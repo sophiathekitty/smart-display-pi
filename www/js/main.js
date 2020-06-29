@@ -1,4 +1,4 @@
-var weather_url = "http://api.openweathermap.org/data/2.5/weather?q=Westminster,US&units=imperial&appid=de70cab93f8df394687971295474e104"
+var weather_url = "/api/weather/?current=true";//"http://api.openweathermap.org/data/2.5/weather?q=Westminster,US&units=imperial&appid=de70cab93f8df394687971295474e104"
 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 var day_of_week = ["Sun", "Mon", "Tue", "Wed","Thu", "Fri", "Sat"];
 var stndrdth = ["st","nd","rd","th","th","th","th","th","th","th","th","th","th","th","th","th","th","th","th","st","nd","rd","th","th","th","th","th","th","th","st"];
@@ -75,12 +75,12 @@ function PullWeather(){
     $.get(weather_url).done(function(weather){
         console.log(weather);
 
-        $("#live_weather").attr("weather",weather.weather[0].description);
-        $("#live_weather").attr("icon",weather.weather[0].icon);
-        $("#live_weather [var=temp]").html(Math.round(weather.main.temp));
-        $("#live_weather [var=temp]").attr("temp_range",Math.round(weather.main.temp/10));
-        $("#live_weather [var=feels_like]").html(Math.round(weather.main.feels_like));
-        $("#live_weather [var=feels_like]").attr("temp_range",Math.round(weather.main.feels_like/10));
-        $("#live_weather [var=humidity]").html(Math.round(weather.main.humidity));
+        $("#live_weather").attr("weather",weather.current.weather[0].description);
+        $("#live_weather").attr("icon",weather.current.weather[0].icon);
+        $("#live_weather [var=temp]").html(Math.round(weather.current.main.temp));
+        $("#live_weather [var=temp]").attr("temp_range",Math.floor(weather.current.main.temp/10));
+        $("#live_weather [var=feels_like]").html(Math.round(weather.current.main.feels_like));
+        $("#live_weather [var=feels_like]").attr("temp_range",Math.floor(weather.current.main.feels_like/10));
+        $("#live_weather [var=humidity]").html(Math.round(weather.current.main.humidity));
     });
 }

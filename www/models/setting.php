@@ -7,9 +7,13 @@ function GetSetting($name){
     if(count($setting)){
         return $setting[0];
     }
-    return ["error"=>"404 setting not found"];
+    return null;
 }
 function SetSetting($name,$value){
-    clsDB::$db_g->safe_update("settings",["value",$value],["name"=>$name]);
+    $setting = GetSetting($name);
+    if(is_null($setting))
+        clsDB::$db_g->safe_insert("settings",["value"=>$value,"name"=>$name]);
+    else
+        clsDB::$db_g->safe_update("settings",["value"=>$value],["name"=>$name]);
 }
 ?>

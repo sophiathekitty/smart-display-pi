@@ -6,7 +6,9 @@ $photos = json_decode($info);
 $data = ["photos"=>[]];
 $data['raw'] = $photos;
 $hour = date("H");
-if($hour > 6 && $hour < 18){
+$sunrise = GetSetting('sunrise');
+$sunset = GetSetting('sunset');
+if($hour >= $sunrise && $hour < $sunset){
     foreach($photos->photos as $photo){
         $isDay = false;
         foreach($photo->tags as $tag){
