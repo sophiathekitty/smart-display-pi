@@ -18,9 +18,9 @@ $data = [
 		'url' => $_SERVER['HTTP_HOST'],
 		'type' => "display",
 		'main' => 0,
-		'server' => "pi3ap",
+		'server' => "pi4b",
 		'mac_address' => $mac_address,
-		'name' => "raspberry display"
+		'name' => "basement tv"
 		]
 	];
 header('Access-Control-Allow-Origin: *');

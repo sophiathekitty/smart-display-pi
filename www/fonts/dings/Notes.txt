@@ -1,0 +1,69 @@
+Company logos in the icons are copyright of their respective owners.
+
+Social Icons Pro Set 1 - Rounded
+
+Icons created by Phelan Riessen http://phelanriessen.com and thanks to http://alexpeattie.com for sharing his vector set to make this job easier.
+
+0 - Email
+1 - Phone
+2 - FAQ
+3 - Information
+4 - RSS
+5 - Home
+6 - Left Arrow
+7 - Right Arrow
+8 - @ symbol
+9 - Up arrow
+@ - Like button
+A - Behance
+B - Bebo
+C - Daily Booth
+D - Digg
+E - Delicious
+F - Facebook Locations
+G - Google+
+H - Hyves
+I - GitHub
+J - Google Talk
+K - Grooveshark
+L - Flickr
+M - MySpace
+N - Netlog
+O - Picassa
+P - Pinterest
+Q - Quora
+R - Retweet
+S - StumbleUpon
+T - Twitter
+U - Tumblr
+V - Virb
+W - w3
+X - Wikipedia
+Y - YouTube
+Z - ZooTool
+a - Arto
+b - Blogger
+c - CafeMom
+d - Digg
+e - FourSquare
+f - Facebook
+g - Google
+h - hi5
+i - Deviant Art
+j - Friendster
+k - Kik
+l - LinkedIn
+m - Meetup
+n - Ning
+o - Orkut
+p - Pinterest
+q - Quora
+r - Reddit
+s - Spotify
+t - twitter
+u - Tagged
+v - Vimeo
+w - WordPress
+x - Xing
+y - Yelp
+z - Zerply

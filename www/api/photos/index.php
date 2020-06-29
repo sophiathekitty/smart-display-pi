@@ -4,6 +4,7 @@ $server = HubServer();
 $info = file_get_contents("http://".$server['url']."/api/photos/");
 $photos = json_decode($info);
 $data = ["photos"=>[]];
+$data['raw'] = $photos;
 $hour = date("H");
 if($hour > 6 && $hour < 18){
     foreach($photos->photos as $photo){

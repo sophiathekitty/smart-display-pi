@@ -1,0 +1,57 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'KenyanCoffee';
+  src: url(../fonts/kenyan%20coffee%20rg.ttf); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'HeavyHeap';
+  src: url(../fonts/heavy%20heap.ttf) /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'PincoyaBlack';
+  src: url(../fonts/pincoyablack.otf) /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'Sansation';
+  src: url(../fonts/Sansation_Regular.ttf) /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'Boogie';
+  src: url(../fonts/y2kboogie.ttf) /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'Social';
+  src: url(../fonts/dings/Social%20Circles.otf) /* IE9 Compat Modes */
+}
+@font-face{
+  font-family: 'Neon';
+  src: url(../fonts/Neon.ttf);
+}
+@font-face{
+  font-family: 'Pompadour';
+  src: url(../fonts/02_APompadourTextSample.ttf)
+}
+@font-face{
+  font-family: 'Anjara';
+  src: url(../fonts/Anjara.ttf);
+}
+@font-face{
+  font-family: 'kgLetHerGo';
+  src: url(../fonts/KGLETHERGO.ttf);
+}
+@font-face{
+  font-family: 'Rimouski';
+  src: url(../fonts/rimouski\ sb.ttf);
+}
+@font-face{
+  font-family: 'ViceCitySans';
+  src: url(../fonts/ViceCitySans.otf);
+}
+@font-face{
+  font-family: 'EmojiFace';
+  src: url(../fonts/dings/Emoticonsoutline-AJB2.otf);
+}
+@font-face{
+  font-family: 'EmojiFace2';
+  src: url(../fonts/dings/Emoticons-DJ9m.otf);
+}
